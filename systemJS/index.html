@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./s.min.js"></script>
+    <script type="systemjs-importmap">
+        {
+          "imports": {
+            "vue": "https://unpkg.com/vue"
+          }
+        }
+      </script>
+      <script>
+        // The "vue" specifier will now be "resolved" to https://unpkg.com/vue
+        System.import('vue');
+      </script>
+</body>
+</html>
